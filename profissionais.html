@@ -9,7 +9,7 @@
 
         <header>
             <div id="logo">
-                <img src="" alt="Logo SGCM">
+                <img src="imagens/logo.png" alt="Logo SGCM">
                 <span id="titulo">SGCM</span>
             </div>
             <div id="usuarioInfo">
@@ -32,17 +32,150 @@
         </nav>
 
         <main>
-            <div id="elementoFigCaption">
-                <figure>
-                    <img src="pandas.png" alt="pandas">
-                    <figcaption>
-                        Pandas. Fonte: https://google.com.
-                    </figcaption>
-                </figure>
-            </div>
+
+            <!-- Início da estrutura do formulário -->
+            <form action="#">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="registro">Registro</label>
+                    <input type="text" name="registroConselho" id="registroConselho">
+
+                    <!-- TODO: modificar o type -->
+                    <label for="especialidade">Especialidade</label>
+                    <select name="especialidade" id="especialidade">
+                        <option value=""></option>
+                        <option value="1">Geral</option>
+                        <option value="2">Obstetrícia</option>
+                        <option value="3">Psiquiatria</option>
+                        <option value="4">Nutricionista</option>
+                        <option value="5">Ortopedia</option>
+                    </select>
+                    <!--<input type="text" name="especialidade" id="especialidade">-->
+
+
+                    <!-- TODO: modificar o type -->
+                    <label for="unidade">Unidade</label>
+                    <select name="unidade" id="unidade">
+                        <option value=""></option>
+                        <option value="1">Rio Branco (AC)</option>
+                        <option value="2">Florianópolis (SC)</option>
+                        <option value="3">Goiânia (GO)</option>
+                    </select>
+                    <!--<input type="text" name="unidade" id="unidade">-->
+                    
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <!-- Fim da estrutura do formulário -->
+
+            <!-- Estrutura de uma tabela-->
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Registro</th>
+                        <th>Especialidade</th>
+                        <th>Unidade</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>texto 1</td>
+                        <td>texto 2</td>
+                        <td>texto 3</td>
+                        <td>texto 4</td>
+                        <td>texto 5</td>
+                        <td>texto 6</td>
+                        <td>texto 7</td>
+                        <td>
+                            <a href="javascript:void(0)">Editar</a>
+                            <a href="javascript:void(0)">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>texto 1</td>
+                        <td>texto 2</td>
+                        <td>texto 3</td>
+                        <td>texto 4</td>
+                        <td>texto 5</td>
+                        <td>texto 6</td>
+                        <td>texto 7</td>
+                        <td>
+                            <a href="javascript:void(0)">Editar</a>
+                            <a href="javascript:void(0)">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>texto 1</td>
+                        <td>texto 2</td>
+                        <td>texto 3</td>
+                        <td>texto 4</td>
+                        <td>texto 5</td>
+                        <td>texto 6</td>
+                        <td>texto 7</td>
+                        <td>
+                            <a href="javascript:void(0)">Editar</a>
+                            <a href="javascript:void(0)">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>texto 1</td>
+                        <td>texto 2</td>
+                        <td>texto 3</td>
+                        <td>texto 4</td>
+                        <td>texto 5</td>
+                        <td>texto 6</td>
+                        <td>texto 7</td>
+                        <td>
+                            <a href="javascript:void(0)">Editar</a>
+                            <a href="javascript:void(0)">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>texto 1</td>
+                        <td>texto 2</td>
+                        <td>texto 3</td>
+                        <td>texto 4</td>
+                        <td>texto 5</td>
+                        <td>texto 6</td>
+                        <td>texto 7</td>
+                        <td>
+                            <a href="javascript:void(0)">Editar</a>
+                            <a href="javascript:void(0)">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="8">Total de registros: 5</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+            <!-- Fim da estrutura da tabela -->
+
         </main>
 
-        <footer></footer>
+        <footer>
+            <span>SGCM - Sistema de Gerenciamento de Clínica Médica</span>
+            <br>
+            <span>Suporte técnico: (68) 99988-7766 | <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a></span>
+        </footer>
 
     </body>
 
