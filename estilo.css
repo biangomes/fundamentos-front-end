@@ -12,6 +12,7 @@ header {
     background-image: linear-gradient(#003366, #006699);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* quebra a linha quando os elementos não couberem numa linha somente */
 }
 
 footer {
@@ -55,6 +56,13 @@ div#usuarioInfo a.botao {
     border-radius: 1px solid white;
 }
 
+@media screen and (max-width: 430px) {
+    div#usuarioInfo {
+        margin-top: 1em;
+        text-align: left;
+    }
+}
+
 /* NAV */
 nav {
     background-color: #383838;
@@ -83,12 +91,43 @@ nav ul li a:hover {
     color: #383838;
 }
 
+nav div#dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    border: 1px solid white;
+    box-shadow: 0px 2px 4px black;
+}
+
+nav div#dropdown_menu a {
+    display: block;
+}
+
+/* elemento hover + elemento que sofrerá a ação */
+nav ul li#dropdown:hover div#dropdown_menu {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+}
+
 /* Tabelas */ 
 
 table {
     border-spacing: 0.1em;
     margin: 0.5em auto;
     width: 100%;
+    /* Responsivo */
+    overflow-x: auto;
+    display: block;
 }
 
 table th {
@@ -158,6 +197,21 @@ input:required:invalid, select:required:invalid {
     border: 1px solid brown;
 }
 
+@media screen and (max-width: 700px) {
+    form div.grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 90%;
+        text-align: left;
+    }
+
+    form div.grid input, form div.grid select {
+        width: 100%;
+    }
+}
+
 
 /* Botões */
 
@@ -194,4 +248,20 @@ a.botao.excluir {
 
 a.botao.excluir:hover {
     background-color: #811b1b;
+}
+
+/* Main */
+
+main {
+    padding: 1em;
+    background-image: linear-gradient(#cccccc, white);
+}
+
+/* Comandos */
+
+div#comandos {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em .1em;
+    flex-wrap: wrap;
 }

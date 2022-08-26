@@ -2,6 +2,9 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no"> 
+        <!-- seta o tamanho da tela visível e desativa a forma como o navegador redimensiona os elementos -->
+        <meta charset="utf-8">
         <title>SGCM</title>
         <link rel="stylesheet" href="estilo.css">
     </head>
@@ -27,9 +30,17 @@
                 <li><a href="pacientes.html">Pacientes</a></li>
                 <li><a href="profissionais.html">Profissionais</a></li>
                 <li><a href="convenios.html">Convênios</a></li>
-                <li><a href="unidades.html">Unidades</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="usuarios.html">Usuários</a></li>
+                <li id="dropdown">
+                    <a href="javascript:void(0)">
+                        Configurações
+                        <span>&#9660;</span>
+                    </a>
+                    <div id="dropdown_menu">
+                        <a href="unidades.html">Unidades</a>
+                        <a href="especialidades.html">Especialidades</a>
+                        <a href="usuarios.html">Usuários</a>
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -78,9 +89,16 @@
 
                 <input type="button" value="Cancelar">
                 <input type="submit" value="Enviar">
-            </form>
-            <!-- Fim da estrutura do formulário -->
 
+            <div id="comandos">
+                <a href="javascript:void(0)" id="add" class="botao">Adicionar</a>
+                <div>
+                    <form action="">
+                        <label for="busca">Busca</label>
+                        <input type="text" name="busca" id="busca">
+                    </form>
+                </div>
+            </div>
 
             <!-- Estrutura de uma tabela-->
             <table>
