@@ -28,27 +28,31 @@ footer a {
     color: white;
 }
 
-div #logo {
+div#logo {
     margin: auto 0;
 }
 
-div #logo * {
+div#logo * {
     vertical-align: middle;
     margin-left: 1em;
 }
 
-div #logo span {
+div#logo span {
     font-size: 2em;
     font-weight: bold;
 }
 
-div #usuarioInfo span, footer span {
+div#usuarioInfo span, footer span {
     display: block;
     margin-bottom: 0.5em;
 }
 
-div #usuarioInfo span {
+div#usuarioInfo {
     text-align: right;
+}
+
+div#usuarioInfo a.botao {
+    border-radius: 1px solid white;
 }
 
 /* NAV */
