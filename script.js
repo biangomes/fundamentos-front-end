@@ -7,7 +7,7 @@ window.onload = function() {
     botoes.forEach(item => {
         item.addEventListener('click', () => {
             if (confirm("Deseja realmente excluir?")) {
-                alert("excluir");
+                item.parentNode.parentNode.remove();
             }
         })
     });       // mesma coisa ---> function nome() { }
