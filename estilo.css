@@ -7,12 +7,13 @@ body {
 }
 
 
-/* Header e footer  */
+/* Header e Footer */
+
 header {
     background-image: linear-gradient(#003366, #006699);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* quebra a linha quando os elementos não couberem numa linha somente */
+    flex-wrap: wrap;
 }
 
 footer {
@@ -22,7 +23,7 @@ footer {
 
 header, footer {
     color: white;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 footer a {
@@ -35,7 +36,7 @@ div#logo {
 
 div#logo * {
     vertical-align: middle;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 div#logo span {
@@ -53,17 +54,20 @@ div#usuarioInfo {
 }
 
 div#usuarioInfo a.botao {
-    border-radius: 1px solid white;
+    border: 1px solid white;
 }
 
 @media screen and (max-width: 430px) {
+
     div#usuarioInfo {
         margin-top: 1em;
         text-align: left;
-    }
+    } 
 }
 
+
 /* NAV */
+
 nav {
     background-color: #383838;
     border-top: 1px solid white;
@@ -87,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #cccc;
+    background-color: #cccccc;
     color: #383838;
 }
 
@@ -103,12 +107,12 @@ nav div#dropdown_menu a {
     display: block;
 }
 
-/* elemento hover + elemento que sofrerá a ação */
 nav ul li#dropdown:hover div#dropdown_menu {
     display: block;
 }
 
 @media screen and (max-width: 700px) {
+
     nav ul li {
         display: block;
         width: 100%;
@@ -117,9 +121,11 @@ nav ul li#dropdown:hover div#dropdown_menu {
     nav ul li a {
         width: 100%;
     }
+
 }
 
-/* Tabelas */ 
+
+/* Tabelas */
 
 table {
     border-spacing: 0.1em;
@@ -148,7 +154,7 @@ table tbody tr:nth-child(even) {
 }
 
 table tbody tr:hover {
-    background-color: #cccc;
+    background-color: #cccccc;
 }
 
 table tfoot td {
@@ -158,6 +164,7 @@ table tfoot td {
 
 table td:last-child, table td.fit {
     width: 1%;
+    text-align: center;
     white-space: nowrap;
 }
 
@@ -184,7 +191,7 @@ form label::after {
 
 input, select {
     height: 2em;
-    border: 1px solid #383838;
+    border: 1px solid #757575;
     box-sizing: border-box;
 }
 
@@ -192,12 +199,13 @@ form div.grid input, form div.grid select {
     width: 18em;
 }
 
-/* Required */
-input:required:invalid, select:required:invalid {
-    border: 1px solid brown;
+input:required:invalid,
+select:required:invalid {
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 700px) {
+
     form div.grid {
         grid-template-columns: 1fr;
     }
@@ -210,12 +218,15 @@ input:required:invalid, select:required:invalid {
     form div.grid input, form div.grid select {
         width: 100%;
     }
+
 }
 
 
 /* Botões */
 
-a.botao, input[type="button"], input[type="submit"] {
+a.botao,
+input[type="button"],
+input[type="submit"] {
     color: white;
     border: none;
     cursor: pointer;
@@ -223,7 +234,9 @@ a.botao, input[type="button"], input[type="submit"] {
     border-radius: 4px;
 }
 
-a.botao:hover, input[type="submit"], input[type="button"] {
+a.botao:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
     background-color: #1e5e20;
 }
 
@@ -231,7 +244,8 @@ input, select, a.botao {
     font-size: 1em;
 }
 
-input[type="button"], input[type="submit"] {
+input[type="button"],
+input[type="submit"] {
     height: 2em;
 }
 
@@ -250,6 +264,7 @@ a.botao.excluir:hover {
     background-color: #811b1b;
 }
 
+
 /* Main */
 
 main {
@@ -257,11 +272,12 @@ main {
     background-image: linear-gradient(#cccccc, white);
 }
 
+
 /* Comandos */
 
 div#comandos {
     display: flex;
     justify-content: space-between;
-    padding: .5em .1em;
+    padding: 0.5em 0.1em;
     flex-wrap: wrap;
 }
